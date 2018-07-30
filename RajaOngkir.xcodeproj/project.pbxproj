@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2D962A8F073A554B758DE2 /* Pods_RajaOngkirUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86AFBDCBCD6CC04385A0C1D /* Pods_RajaOngkirUITests.framework */; };
+		8F613C2894C677A78ACDAAE1 /* Pods_RajaOngkir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53988454135A258C1312C57B /* Pods_RajaOngkir.framework */; };
+		A16A63ED97AA08A51D939152 /* Pods_RajaOngkirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2E8D87DA81845FC2FAFAE8 /* Pods_RajaOngkirTests.framework */; };
+		F9024F63210D7A2400384E39 /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F61210D7A2400384E39 /* SSRadioButton.swift */; };
+		F9024F64210D7A2400384E39 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F62210D7A2400384E39 /* SSRadioButtonsController.swift */; };
+		F9024F66210D8B4300384E39 /* CostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F65210D8B4300384E39 /* CostResponse.swift */; };
+		F9024F6C210D921100384E39 /* CostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F6B210D921100384E39 /* CostVC.swift */; };
+		F91C558B210E9C5A00EA35B6 /* ProvinceRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C558A210E9C5A00EA35B6 /* ProvinceRealm.swift */; };
+		F91C558D210E9D2700EA35B6 /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C558C210E9D2700EA35B6 /* DbRepository.swift */; };
+		F91C558F210E9EE600EA35B6 /* CityRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C558E210E9EE600EA35B6 /* CityRealm.swift */; };
+		F91C5593210EA81C00EA35B6 /* RealmExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C5592210EA81C00EA35B6 /* RealmExtention.swift */; };
+		F91C5595210EB51D00EA35B6 /* ProvCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C5594210EB51D00EA35B6 /* ProvCityViewModel.swift */; };
+		F91C559A210EBC6500EA35B6 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C5599210EBC6500EA35B6 /* HRToast+UIView.swift */; };
+		F95EC35D210B15F4005C49A9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC35C210B15F4005C49A9 /* ApiManager.swift */; };
+		F95EC35F210B171E005C49A9 /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC35E210B171E005C49A9 /* ApiRepository.swift */; };
+		F95EC361210B1834005C49A9 /* ProvinceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC360210B1834005C49A9 /* ProvinceResponse.swift */; };
+		F95EC363210B192A005C49A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC362210B192A005C49A9 /* API.swift */; };
+		F95EC369210C0E7B005C49A9 /* CitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC368210C0E7B005C49A9 /* CitiesResponse.swift */; };
+		F9A0C3FC210DFDE8005C2087 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0C3FA210DFDE8005C2087 /* ResultCell.swift */; };
+		F9A0C3FD210DFDE8005C2087 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A0C3FB210DFDE8005C2087 /* ResultCell.xib */; };
+		F9BB8CBB210AECC7008F9561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CBA210AECC7008F9561 /* AppDelegate.swift */; };
+		F9BB8CBD210AECC7008F9561 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CBC210AECC7008F9561 /* MainVC.swift */; };
+		F9BB8CC0210AECC7008F9561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB8CBE210AECC7008F9561 /* Main.storyboard */; };
+		F9BB8CC2210AECC9008F9561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BB8CC1210AECC9008F9561 /* Assets.xcassets */; };
+		F9BB8CC5210AECC9008F9561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB8CC3210AECC9008F9561 /* LaunchScreen.storyboard */; };
+		F9BB8CD0210AECC9008F9561 /* RajaOngkirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CCF210AECC9008F9561 /* RajaOngkirTests.swift */; };
+		F9BB8CDB210AECC9008F9561 /* RajaOngkirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CDA210AECC9008F9561 /* RajaOngkirUITests.swift */; };
+		F9BB8CEF210AF068008F9561 /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CEE210AF068008F9561 /* RoundUIView.swift */; };
+		F9BB8CF1210AF758008F9561 /* RoundUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CF0210AF758008F9561 /* RoundUIButton.swift */; };
+		F9BB8CF3210AFF4E008F9561 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CF2210AFF4E008F9561 /* AppTextField.swift */; };
+		F9BB8CF7210B0314008F9561 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CF5210B0314008F9561 /* PlaceCell.swift */; };
+		F9BB8CF8210B0314008F9561 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BB8CF6210B0314008F9561 /* PlaceCell.xib */; };
+		F9BB8CFC210B0479008F9561 /* ProvinceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CFB210B0479008F9561 /* ProvinceVC.swift */; };
+		F9BB8CFF210B0599008F9561 /* TableExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CFE210B0599008F9561 /* TableExtention.swift */; };
+		F9BB8D02210B0640008F9561 /* Constan.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8D01210B0640008F9561 /* Constan.swift */; };
+		F9BB8D04210B09C0008F9561 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8D03210B09C0008F9561 /* BaseVC.swift */; };
+		F9BB8D06210B0BB2008F9561 /* CityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8D05210B0BB2008F9561 /* CityVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9BB8CCC210AECC9008F9561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9BB8CAF210AECC7008F9561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9BB8CB6210AECC7008F9561;
+			remoteInfo = RajaOngkir;
+		};
+		F9BB8CD7210AECC9008F9561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9BB8CAF210AECC7008F9561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9BB8CB6210AECC7008F9561;
+			remoteInfo = RajaOngkir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B7A14AB26A2CFE623AB3518 /* Pods-RajaOngkir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaOngkir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RajaOngkir/Pods-RajaOngkir.debug.xcconfig"; sourceTree = "<group>"; };
+		44E503DE2FFA8510F4546393 /* Pods-RajaOngkirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaOngkirUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RajaOngkirUITests/Pods-RajaOngkirUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53988454135A258C1312C57B /* Pods_RajaOngkir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RajaOngkir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635D6A87F57FBD775C9722A3 /* Pods-RajaOngkir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaOngkir.release.xcconfig"; path = "Pods/Target Support Files/Pods-RajaOngkir/Pods-RajaOngkir.release.xcconfig"; sourceTree = "<group>"; };
+		704DAB425FC1B90F885B349A /* Pods-RajaOngkirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaOngkirTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RajaOngkirTests/Pods-RajaOngkirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		766CFD25DA4E41839CE15BE9 /* Pods-RajaOngkirUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaOngkirUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RajaOngkirUITests/Pods-RajaOngkirUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		97230C4E20E85B4EC62D4DCC /* Pods-RajaOngkirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RajaOngkirTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RajaOngkirTests/Pods-RajaOngkirTests.release.xcconfig"; sourceTree = "<group>"; };
+		B86AFBDCBCD6CC04385A0C1D /* Pods_RajaOngkirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RajaOngkirUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF2E8D87DA81845FC2FAFAE8 /* Pods_RajaOngkirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RajaOngkirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9024F61210D7A2400384E39 /* SSRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
+		F9024F62210D7A2400384E39 /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
+		F9024F65210D8B4300384E39 /* CostResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CostResponse.swift; path = RajaOngkirUITests/CostResponse.swift; sourceTree = SOURCE_ROOT; };
+		F9024F6B210D921100384E39 /* CostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostVC.swift; sourceTree = "<group>"; };
+		F91C558A210E9C5A00EA35B6 /* ProvinceRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceRealm.swift; sourceTree = "<group>"; };
+		F91C558C210E9D2700EA35B6 /* DbRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbRepository.swift; sourceTree = "<group>"; };
+		F91C558E210E9EE600EA35B6 /* CityRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRealm.swift; sourceTree = "<group>"; };
+		F91C5592210EA81C00EA35B6 /* RealmExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtention.swift; sourceTree = "<group>"; };
+		F91C5594210EB51D00EA35B6 /* ProvCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvCityViewModel.swift; sourceTree = "<group>"; };
+		F91C5599210EBC6500EA35B6 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		F95EC35C210B15F4005C49A9 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F95EC35E210B171E005C49A9 /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
+		F95EC360210B1834005C49A9 /* ProvinceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceResponse.swift; sourceTree = "<group>"; };
+		F95EC362210B192A005C49A9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F95EC368210C0E7B005C49A9 /* CitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesResponse.swift; sourceTree = "<group>"; };
+		F9A0C3FA210DFDE8005C2087 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		F9A0C3FB210DFDE8005C2087 /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
+		F9BB8CB7210AECC7008F9561 /* RajaOngkir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RajaOngkir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BB8CBA210AECC7008F9561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9BB8CBC210AECC7008F9561 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F9BB8CBF210AECC7008F9561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9BB8CC1210AECC9008F9561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9BB8CC4210AECC9008F9561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9BB8CC6210AECC9008F9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BB8CCB210AECC9008F9561 /* RajaOngkirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RajaOngkirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BB8CCF210AECC9008F9561 /* RajaOngkirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RajaOngkirTests.swift; sourceTree = "<group>"; };
+		F9BB8CD1210AECC9008F9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BB8CD6210AECC9008F9561 /* RajaOngkirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RajaOngkirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BB8CDA210AECC9008F9561 /* RajaOngkirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RajaOngkirUITests.swift; sourceTree = "<group>"; };
+		F9BB8CDC210AECC9008F9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9BB8CEE210AF068008F9561 /* RoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
+		F9BB8CF0210AF758008F9561 /* RoundUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIButton.swift; sourceTree = "<group>"; };
+		F9BB8CF2210AFF4E008F9561 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		F9BB8CF5210B0314008F9561 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		F9BB8CF6210B0314008F9561 /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		F9BB8CFB210B0479008F9561 /* ProvinceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceVC.swift; sourceTree = "<group>"; };
+		F9BB8CFE210B0599008F9561 /* TableExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableExtention.swift; sourceTree = "<group>"; };
+		F9BB8D01210B0640008F9561 /* Constan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constan.swift; sourceTree = "<group>"; };
+		F9BB8D03210B09C0008F9561 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		F9BB8D05210B0BB2008F9561 /* CityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9BB8CB4210AECC7008F9561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F613C2894C677A78ACDAAE1 /* Pods_RajaOngkir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BB8CC8210AECC9008F9561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16A63ED97AA08A51D939152 /* Pods_RajaOngkirTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BB8CD3210AECC9008F9561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2D962A8F073A554B758DE2 /* Pods_RajaOngkirUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D82AE17AF22B8C7BE446F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53988454135A258C1312C57B /* Pods_RajaOngkir.framework */,
+				EF2E8D87DA81845FC2FAFAE8 /* Pods_RajaOngkirTests.framework */,
+				B86AFBDCBCD6CC04385A0C1D /* Pods_RajaOngkirUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9284CCA30D0A790F60E10B70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B7A14AB26A2CFE623AB3518 /* Pods-RajaOngkir.debug.xcconfig */,
+				635D6A87F57FBD775C9722A3 /* Pods-RajaOngkir.release.xcconfig */,
+				704DAB425FC1B90F885B349A /* Pods-RajaOngkirTests.debug.xcconfig */,
+				97230C4E20E85B4EC62D4DCC /* Pods-RajaOngkirTests.release.xcconfig */,
+				766CFD25DA4E41839CE15BE9 /* Pods-RajaOngkirUITests.debug.xcconfig */,
+				44E503DE2FFA8510F4546393 /* Pods-RajaOngkirUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9024F5D210D79C600384E39 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F91C5598210EBC5300EA35B6 /* Toast */,
+				F9024F60210D7A1100384E39 /* SSRadioButton */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F9024F60210D7A1100384E39 /* SSRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				F9024F61210D7A2400384E39 /* SSRadioButton.swift */,
+				F9024F62210D7A2400384E39 /* SSRadioButtonsController.swift */,
+			);
+			path = SSRadioButton;
+			sourceTree = "<group>";
+		};
+		F91C5589210E9C3300EA35B6 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				F91C558A210E9C5A00EA35B6 /* ProvinceRealm.swift */,
+				F91C558E210E9EE600EA35B6 /* CityRealm.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		F91C5598210EBC5300EA35B6 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F91C5599210EBC6500EA35B6 /* HRToast+UIView.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		F95EC35B210B15DF005C49A9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F95EC35C210B15F4005C49A9 /* ApiManager.swift */,
+				F95EC362210B192A005C49A9 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F9BB8CAE210AECC7008F9561 = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CB9210AECC7008F9561 /* RajaOngkir */,
+				F9BB8CCE210AECC9008F9561 /* RajaOngkirTests */,
+				F9BB8CD9210AECC9008F9561 /* RajaOngkirUITests */,
+				F9BB8CB8210AECC7008F9561 /* Products */,
+				9284CCA30D0A790F60E10B70 /* Pods */,
+				6D82AE17AF22B8C7BE446F9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9BB8CB8210AECC7008F9561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CB7210AECC7008F9561 /* RajaOngkir.app */,
+				F9BB8CCB210AECC9008F9561 /* RajaOngkirTests.xctest */,
+				F9BB8CD6210AECC9008F9561 /* RajaOngkirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9BB8CB9210AECC7008F9561 /* RajaOngkir */ = {
+			isa = PBXGroup;
+			children = (
+				F9024F5D210D79C600384E39 /* Helper */,
+				F95EC35B210B15DF005C49A9 /* Network */,
+				F9BB8D00210B062C008F9561 /* Data */,
+				F9BB8CFD210B0583008F9561 /* Extention */,
+				F9BB8CF4210B02D2008F9561 /* Xib */,
+				F9BB8CED210AF02B008F9561 /* Desigable */,
+				F9BB8CEC210AED63008F9561 /* ViewModel */,
+				F9BB8CEB210AED52008F9561 /* Repository */,
+				F9BB8CEA210AED45008F9561 /* Model */,
+				F9BB8CE9210AED3A008F9561 /* ViewController */,
+				F9BB8CE8210AED2A008F9561 /* Storyboard */,
+				F9BB8CBA210AECC7008F9561 /* AppDelegate.swift */,
+				F9BB8CC1210AECC9008F9561 /* Assets.xcassets */,
+				F9BB8CC3210AECC9008F9561 /* LaunchScreen.storyboard */,
+				F9BB8CC6210AECC9008F9561 /* Info.plist */,
+			);
+			path = RajaOngkir;
+			sourceTree = "<group>";
+		};
+		F9BB8CCE210AECC9008F9561 /* RajaOngkirTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CCF210AECC9008F9561 /* RajaOngkirTests.swift */,
+				F9BB8CD1210AECC9008F9561 /* Info.plist */,
+			);
+			path = RajaOngkirTests;
+			sourceTree = "<group>";
+		};
+		F9BB8CD9210AECC9008F9561 /* RajaOngkirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CDA210AECC9008F9561 /* RajaOngkirUITests.swift */,
+				F9BB8CDC210AECC9008F9561 /* Info.plist */,
+			);
+			path = RajaOngkirUITests;
+			sourceTree = "<group>";
+		};
+		F9BB8CE8210AED2A008F9561 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CBE210AECC7008F9561 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F9BB8CE9210AED3A008F9561 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CBC210AECC7008F9561 /* MainVC.swift */,
+				F9BB8CFB210B0479008F9561 /* ProvinceVC.swift */,
+				F9BB8D05210B0BB2008F9561 /* CityVC.swift */,
+				F9BB8D03210B09C0008F9561 /* BaseVC.swift */,
+				F9024F6B210D921100384E39 /* CostVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F9BB8CEA210AED45008F9561 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F91C5589210E9C3300EA35B6 /* db */,
+				F95EC360210B1834005C49A9 /* ProvinceResponse.swift */,
+				F95EC368210C0E7B005C49A9 /* CitiesResponse.swift */,
+				F9024F65210D8B4300384E39 /* CostResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9BB8CEB210AED52008F9561 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F95EC35E210B171E005C49A9 /* ApiRepository.swift */,
+				F91C558C210E9D2700EA35B6 /* DbRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F9BB8CEC210AED63008F9561 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F91C5594210EB51D00EA35B6 /* ProvCityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9BB8CED210AF02B008F9561 /* Desigable */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CEE210AF068008F9561 /* RoundUIView.swift */,
+				F9BB8CF0210AF758008F9561 /* RoundUIButton.swift */,
+				F9BB8CF2210AFF4E008F9561 /* AppTextField.swift */,
+			);
+			path = Desigable;
+			sourceTree = "<group>";
+		};
+		F9BB8CF4210B02D2008F9561 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CF5210B0314008F9561 /* PlaceCell.swift */,
+				F9BB8CF6210B0314008F9561 /* PlaceCell.xib */,
+				F9A0C3FA210DFDE8005C2087 /* ResultCell.swift */,
+				F9A0C3FB210DFDE8005C2087 /* ResultCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		F9BB8CFD210B0583008F9561 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8CFE210B0599008F9561 /* TableExtention.swift */,
+				F91C5592210EA81C00EA35B6 /* RealmExtention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		F9BB8D00210B062C008F9561 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB8D01210B0640008F9561 /* Constan.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9BB8CB6210AECC7008F9561 /* RajaOngkir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BB8CDF210AECC9008F9561 /* Build configuration list for PBXNativeTarget "RajaOngkir" */;
+			buildPhases = (
+				D01B5E7F0DF5CC85E8751F26 /* [CP] Check Pods Manifest.lock */,
+				F9BB8CB3210AECC7008F9561 /* Sources */,
+				F9BB8CB4210AECC7008F9561 /* Frameworks */,
+				F9BB8CB5210AECC7008F9561 /* Resources */,
+				666B5F7EAC799206B5ED2EFB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RajaOngkir;
+			productName = RajaOngkir;
+			productReference = F9BB8CB7210AECC7008F9561 /* RajaOngkir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9BB8CCA210AECC9008F9561 /* RajaOngkirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BB8CE2210AECC9008F9561 /* Build configuration list for PBXNativeTarget "RajaOngkirTests" */;
+			buildPhases = (
+				13D3880E431B3BED51D3187E /* [CP] Check Pods Manifest.lock */,
+				F9BB8CC7210AECC9008F9561 /* Sources */,
+				F9BB8CC8210AECC9008F9561 /* Frameworks */,
+				F9BB8CC9210AECC9008F9561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9BB8CCD210AECC9008F9561 /* PBXTargetDependency */,
+			);
+			name = RajaOngkirTests;
+			productName = RajaOngkirTests;
+			productReference = F9BB8CCB210AECC9008F9561 /* RajaOngkirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9BB8CD5210AECC9008F9561 /* RajaOngkirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9BB8CE5210AECC9008F9561 /* Build configuration list for PBXNativeTarget "RajaOngkirUITests" */;
+			buildPhases = (
+				8072A96F3F031093B31FD895 /* [CP] Check Pods Manifest.lock */,
+				F9BB8CD2210AECC9008F9561 /* Sources */,
+				F9BB8CD3210AECC9008F9561 /* Frameworks */,
+				F9BB8CD4210AECC9008F9561 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9BB8CD8210AECC9008F9561 /* PBXTargetDependency */,
+			);
+			name = RajaOngkirUITests;
+			productName = RajaOngkirUITests;
+			productReference = F9BB8CD6210AECC9008F9561 /* RajaOngkirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9BB8CAF210AECC7008F9561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Rumah Ulya";
+				TargetAttributes = {
+					F9BB8CB6210AECC7008F9561 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					F9BB8CCA210AECC9008F9561 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F9BB8CB6210AECC7008F9561;
+					};
+					F9BB8CD5210AECC9008F9561 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F9BB8CB6210AECC7008F9561;
+					};
+				};
+			};
+			buildConfigurationList = F9BB8CB2210AECC7008F9561 /* Build configuration list for PBXProject "RajaOngkir" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9BB8CAE210AECC7008F9561;
+			productRefGroup = F9BB8CB8210AECC7008F9561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9BB8CB6210AECC7008F9561 /* RajaOngkir */,
+				F9BB8CCA210AECC9008F9561 /* RajaOngkirTests */,
+				F9BB8CD5210AECC9008F9561 /* RajaOngkirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9BB8CB5210AECC7008F9561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BB8CC5210AECC9008F9561 /* LaunchScreen.storyboard in Resources */,
+				F9BB8CC2210AECC9008F9561 /* Assets.xcassets in Resources */,
+				F9BB8CC0210AECC7008F9561 /* Main.storyboard in Resources */,
+				F9BB8CF8210B0314008F9561 /* PlaceCell.xib in Resources */,
+				F9A0C3FD210DFDE8005C2087 /* ResultCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BB8CC9210AECC9008F9561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BB8CD4210AECC9008F9561 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13D3880E431B3BED51D3187E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RajaOngkirTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		666B5F7EAC799206B5ED2EFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RajaOngkir/Pods-RajaOngkir-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RajaOngkir/Pods-RajaOngkir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8072A96F3F031093B31FD895 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RajaOngkirUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D01B5E7F0DF5CC85E8751F26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RajaOngkir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9BB8CB3210AECC7008F9561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BB8CF1210AF758008F9561 /* RoundUIButton.swift in Sources */,
+				F9BB8CFC210B0479008F9561 /* ProvinceVC.swift in Sources */,
+				F91C558D210E9D2700EA35B6 /* DbRepository.swift in Sources */,
+				F9BB8CBD210AECC7008F9561 /* MainVC.swift in Sources */,
+				F91C558F210E9EE600EA35B6 /* CityRealm.swift in Sources */,
+				F9BB8CF3210AFF4E008F9561 /* AppTextField.swift in Sources */,
+				F95EC361210B1834005C49A9 /* ProvinceResponse.swift in Sources */,
+				F91C5593210EA81C00EA35B6 /* RealmExtention.swift in Sources */,
+				F9A0C3FC210DFDE8005C2087 /* ResultCell.swift in Sources */,
+				F9024F66210D8B4300384E39 /* CostResponse.swift in Sources */,
+				F9024F64210D7A2400384E39 /* SSRadioButtonsController.swift in Sources */,
+				F95EC35D210B15F4005C49A9 /* ApiManager.swift in Sources */,
+				F9BB8D02210B0640008F9561 /* Constan.swift in Sources */,
+				F9BB8CBB210AECC7008F9561 /* AppDelegate.swift in Sources */,
+				F91C558B210E9C5A00EA35B6 /* ProvinceRealm.swift in Sources */,
+				F9024F63210D7A2400384E39 /* SSRadioButton.swift in Sources */,
+				F95EC35F210B171E005C49A9 /* ApiRepository.swift in Sources */,
+				F9BB8CFF210B0599008F9561 /* TableExtention.swift in Sources */,
+				F9BB8CEF210AF068008F9561 /* RoundUIView.swift in Sources */,
+				F95EC363210B192A005C49A9 /* API.swift in Sources */,
+				F91C5595210EB51D00EA35B6 /* ProvCityViewModel.swift in Sources */,
+				F9024F6C210D921100384E39 /* CostVC.swift in Sources */,
+				F9BB8CF7210B0314008F9561 /* PlaceCell.swift in Sources */,
+				F91C559A210EBC6500EA35B6 /* HRToast+UIView.swift in Sources */,
+				F9BB8D06210B0BB2008F9561 /* CityVC.swift in Sources */,
+				F9BB8D04210B09C0008F9561 /* BaseVC.swift in Sources */,
+				F95EC369210C0E7B005C49A9 /* CitiesResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BB8CC7210AECC9008F9561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BB8CD0210AECC9008F9561 /* RajaOngkirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9BB8CD2210AECC9008F9561 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9BB8CDB210AECC9008F9561 /* RajaOngkirUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9BB8CCD210AECC9008F9561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9BB8CB6210AECC7008F9561 /* RajaOngkir */;
+			targetProxy = F9BB8CCC210AECC9008F9561 /* PBXContainerItemProxy */;
+		};
+		F9BB8CD8210AECC9008F9561 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9BB8CB6210AECC7008F9561 /* RajaOngkir */;
+			targetProxy = F9BB8CD7210AECC9008F9561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9BB8CBE210AECC7008F9561 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9BB8CBF210AECC7008F9561 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9BB8CC3210AECC9008F9561 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9BB8CC4210AECC9008F9561 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9BB8CDD210AECC9008F9561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9BB8CDE210AECC9008F9561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9BB8CE0210AECC9008F9561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7A14AB26A2CFE623AB3518 /* Pods-RajaOngkir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7Z58ZN387;
+				INFOPLIST_FILE = RajaOngkir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RajaOngkir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9BB8CE1210AECC9008F9561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635D6A87F57FBD775C9722A3 /* Pods-RajaOngkir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7Z58ZN387;
+				INFOPLIST_FILE = RajaOngkir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RajaOngkir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9BB8CE3210AECC9008F9561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704DAB425FC1B90F885B349A /* Pods-RajaOngkirTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7Z58ZN387;
+				INFOPLIST_FILE = RajaOngkirTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RajaOngkirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RajaOngkir.app/RajaOngkir";
+			};
+			name = Debug;
+		};
+		F9BB8CE4210AECC9008F9561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97230C4E20E85B4EC62D4DCC /* Pods-RajaOngkirTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7Z58ZN387;
+				INFOPLIST_FILE = RajaOngkirTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RajaOngkirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RajaOngkir.app/RajaOngkir";
+			};
+			name = Release;
+		};
+		F9BB8CE6210AECC9008F9561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 766CFD25DA4E41839CE15BE9 /* Pods-RajaOngkirUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7Z58ZN387;
+				INFOPLIST_FILE = RajaOngkirUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RajaOngkirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RajaOngkir;
+			};
+			name = Debug;
+		};
+		F9BB8CE7210AECC9008F9561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E503DE2FFA8510F4546393 /* Pods-RajaOngkirUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7Z58ZN387;
+				INFOPLIST_FILE = RajaOngkirUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RajaOngkirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RajaOngkir;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9BB8CB2210AECC7008F9561 /* Build configuration list for PBXProject "RajaOngkir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BB8CDD210AECC9008F9561 /* Debug */,
+				F9BB8CDE210AECC9008F9561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BB8CDF210AECC9008F9561 /* Build configuration list for PBXNativeTarget "RajaOngkir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BB8CE0210AECC9008F9561 /* Debug */,
+				F9BB8CE1210AECC9008F9561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BB8CE2210AECC9008F9561 /* Build configuration list for PBXNativeTarget "RajaOngkirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BB8CE3210AECC9008F9561 /* Debug */,
+				F9BB8CE4210AECC9008F9561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9BB8CE5210AECC9008F9561 /* Build configuration list for PBXNativeTarget "RajaOngkirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BB8CE6210AECC9008F9561 /* Debug */,
+				F9BB8CE7210AECC9008F9561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9BB8CAF210AECC7008F9561 /* Project object */;
+}

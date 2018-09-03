@@ -37,7 +37,7 @@ class ApiClientSpec : QuickSpec {
             }
         }
         
-        describe("requeest Cost"){
+        describe("request Cost"){
             context("success") {
                 it("return cost delivery") {
                     var data: Int? = nil

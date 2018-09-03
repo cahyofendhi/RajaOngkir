@@ -8,15 +8,30 @@ target 'RajaOngkir' do
   # Pods for RajaOngkir
   pod 'Alamofire', '~> 4.7'
   pod 'RealmSwift'
-
+  
+  def testing_pods
+      pod 'Quick'
+      pod 'Nimble'
+      pod 'Mockingjay'
+  end
+  
   target 'RajaOngkirTests' do
     inherit! :search_paths
     # Pods for testing
+    testing_pods
+    
   end
 
   target 'RajaOngkirUITests' do
     inherit! :search_paths
     # Pods for testing
+    testing_pods
   end
+
+    post_install do |installer|
+        installer.pods_project.build_configuration_list.build_configurations.each do |configuration|
+            configuration.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        end
+    end
 
 end

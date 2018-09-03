@@ -10,14 +10,14 @@ import Foundation
 import RealmSwift
 
 class Province: Codable {
-    let rajaongkir: Rajaongkir
+    var rajaongkir: RajaongkirProv
     
-    init(rajaongkir: Rajaongkir) {
+    init(rajaongkir: RajaongkirProv) {
         self.rajaongkir = rajaongkir
     }
 }
 
-class Rajaongkir: Codable {
+class RajaongkirProv: Codable {
     let query: [Query]
     let status: Status
     let results: [ProvData]

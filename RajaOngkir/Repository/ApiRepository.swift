@@ -13,7 +13,7 @@ class ApiRepository {
     
     static var instance = ApiRepository()
     
-    func getProvince(result: @escaping(_ data: Province) -> ()) {
+    func getProvince(result: @escaping(_ data: Province?) -> ()) {
         let apiUrl = API.createUrl(endpoint: .province)
         print("URL \(apiUrl)")
         APIManager.getFrom(apiUrl,
@@ -24,7 +24,7 @@ class ApiRepository {
                            completion: { data in
                             
                         let province = try? JSONDecoder().decode(Province.self, from: data)
-                        result(province!)
+                        result(province)
                             
         },
                            failure: { error in

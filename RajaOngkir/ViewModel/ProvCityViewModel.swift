@@ -20,10 +20,11 @@ class ProvCityViewModel {
         } else {
             ApiRepository.instance.getProvince { response in
                 print("from api")
-                let dt = response.rajaongkir.results
-                result(dt)
-                for it in dt {
-                    DbRepository.instance.insertDataProv(data: it)
+                if let result = response {
+                    let dt = result.rajaongkir.results
+                    for it in dt {
+                        DbRepository.instance.insertDataProv(data: it)
+                    }
                 }
             }
         }

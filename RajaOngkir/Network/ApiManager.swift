@@ -42,6 +42,7 @@ struct APIManager {
                 queue: DispatchQueue.main,
                 encoding: String.Encoding.utf8) { response in
                     
+//                    print("Response \(response)")
                     if response.response?.statusCode == 200 {
                         guard let callback = response.data else {
                             failure(self.generateRandomError())

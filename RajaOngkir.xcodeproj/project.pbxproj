@@ -14,6 +14,7 @@
 		F9024F64210D7A2400384E39 /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F62210D7A2400384E39 /* SSRadioButtonsController.swift */; };
 		F9024F66210D8B4300384E39 /* CostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F65210D8B4300384E39 /* CostResponse.swift */; };
 		F9024F6C210D921100384E39 /* CostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9024F6B210D921100384E39 /* CostVC.swift */; };
+		F9113F24213915EA00071B88 /* ProvinceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC360210B1834005C49A9 /* ProvinceResponse.swift */; };
 		F91C558B210E9C5A00EA35B6 /* ProvinceRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C558A210E9C5A00EA35B6 /* ProvinceRealm.swift */; };
 		F91C558D210E9D2700EA35B6 /* DbRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C558C210E9D2700EA35B6 /* DbRepository.swift */; };
 		F91C558F210E9EE600EA35B6 /* CityRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C558E210E9EE600EA35B6 /* CityRealm.swift */; };
@@ -25,6 +26,7 @@
 		F95EC361210B1834005C49A9 /* ProvinceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC360210B1834005C49A9 /* ProvinceResponse.swift */; };
 		F95EC363210B192A005C49A9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC362210B192A005C49A9 /* API.swift */; };
 		F95EC369210C0E7B005C49A9 /* CitiesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95EC368210C0E7B005C49A9 /* CitiesResponse.swift */; };
+		F98B627F213CD42C001C3C8B /* ApiClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98B627E213CD42C001C3C8B /* ApiClientSpec.swift */; };
 		F9A0C3FC210DFDE8005C2087 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A0C3FA210DFDE8005C2087 /* ResultCell.swift */; };
 		F9A0C3FD210DFDE8005C2087 /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A0C3FB210DFDE8005C2087 /* ResultCell.xib */; };
 		F9BB8CBB210AECC7008F9561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BB8CBA210AECC7008F9561 /* AppDelegate.swift */; };
@@ -88,6 +90,7 @@
 		F95EC360210B1834005C49A9 /* ProvinceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceResponse.swift; sourceTree = "<group>"; };
 		F95EC362210B192A005C49A9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		F95EC368210C0E7B005C49A9 /* CitiesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesResponse.swift; sourceTree = "<group>"; };
+		F98B627E213CD42C001C3C8B /* ApiClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientSpec.swift; sourceTree = "<group>"; };
 		F9A0C3FA210DFDE8005C2087 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		F9A0C3FB210DFDE8005C2087 /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
 		F9BB8CB7210AECC7008F9561 /* RajaOngkir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RajaOngkir.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +260,7 @@
 		F9BB8CCE210AECC9008F9561 /* RajaOngkirTests */ = {
 			isa = PBXGroup;
 			children = (
+				F98B627E213CD42C001C3C8B /* ApiClientSpec.swift */,
 				F9BB8CCF210AECC9008F9561 /* RajaOngkirTests.swift */,
 				F9BB8CD1210AECC9008F9561 /* Info.plist */,
 			);
@@ -388,6 +392,7 @@
 				F9BB8CC7210AECC9008F9561 /* Sources */,
 				F9BB8CC8210AECC9008F9561 /* Frameworks */,
 				F9BB8CC9210AECC9008F9561 /* Resources */,
+				F16B80B54076E1F924438F1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,6 +412,7 @@
 				F9BB8CD2210AECC9008F9561 /* Sources */,
 				F9BB8CD3210AECC9008F9561 /* Frameworks */,
 				F9BB8CD4210AECC9008F9561 /* Resources */,
+				CB1E51ED81F9B8E99F819484 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -549,6 +555,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CB1E51ED81F9B8E99F819484 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RajaOngkirUITests/Pods-RajaOngkirUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RajaOngkirUITests/Pods-RajaOngkirUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D01B5E7F0DF5CC85E8751F26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -565,6 +595,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F16B80B54076E1F924438F1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RajaOngkirTests/Pods-RajaOngkirTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RajaOngkirTests/Pods-RajaOngkirTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -609,6 +663,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9BB8CD0210AECC9008F9561 /* RajaOngkirTests.swift in Sources */,
+				F9113F24213915EA00071B88 /* ProvinceResponse.swift in Sources */,
+				F98B627F213CD42C001C3C8B /* ApiClientSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +808,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

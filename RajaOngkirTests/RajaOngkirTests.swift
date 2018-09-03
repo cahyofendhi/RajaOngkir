@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import RajaOngkir
 
 class RajaOngkirTests: XCTestCase {
     
